@@ -1,5 +1,12 @@
 apiVersion: v2
-name: guestbook
+name: pouet
 description: Sample application
 version: 0.0.0
 appVersion: 0.0.0
+
+dependencies:
+  - name: hurukai
+    version: "9.11.0"
+    # from helm repo https://helm.min.io/
+    repository: "oci://harbor.huruk.ai/hurukai"
+
