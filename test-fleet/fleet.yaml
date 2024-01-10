@@ -2,3 +2,4 @@ namespace: fleet-mc-helm-external-example
 helm:
   chart: "oci://registry.hurukai.io/hurukai/hurukai"
   version: 9.11.0
+
