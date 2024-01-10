@@ -1,5 +1,14 @@
-namespace: fleet-mc-helm-external-example
+namespace: hurukai
 helm:
   chart: "oci://registry.hurukai.io/hurukai/hurukai"
   version: 9.11.0
-
+  values:
+    hurukai:
+      env:
+        AGENT_URL: https://apple.com
+  valuesFrom:
+  - configMapKeyRef:
+      name: cm-helm-values
+      # default to namespace of bundle
+      namespace: hurukai
+      key: values.yaml
